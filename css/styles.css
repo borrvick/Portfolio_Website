@@ -1,0 +1,245 @@
+/* 
+Author: Ben Orrvick
+Website: www.benjaminorrvick.com
+Theme: Ben if He were Tactical
+*/
+
+
+/* used for testing  */
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}   */
+html, body
+{
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+h1{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+h2,h4,h5,h6{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #FEB95F !important;
+}
+
+.custom_btn{
+  background-color: #FEB95F;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+
+}
+
+/* BEGIN NAV BAR */
+/* changes color of navbar toggle    */
+/* 56px is a good header height and is used a lot in making sure items dont go under header */
+header{
+  height: 56px;
+} 
+
+.navbar-toggler{
+  background-color: #786F52;
+}
+
+/* so there is a background on mobile and toggle is clicked but there hasnt been any scrolling */
+@media(max-width:767px){
+  .navbar-collapse{
+  background-color: #786F52 !important;
+  border-radius: 5px;
+  padding: 5px;
+  }
+
+  .navbar-brand{
+    font-size: 1.3em !important;
+  }
+}
+
+
+.navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #FEB95F !important;
+  font-size: 2em;
+}
+
+.navbar-text{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #FEB95F !important;
+  font-size: 1.5em;
+}
+
+.navbar-text:hover{
+  color: #fff !important;
+  transition: all 0.5s;
+}
+
+#mainNav{
+
+  background-color: #786f52;
+}
+/* END NAV BAR */
+
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-section {
+  padding: 8rem 0;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+
+hr.divider {
+  height: 0.2rem;
+  max-width: 8rem;
+  margin: 1.5rem auto;
+  background-color: #FEB95F;
+  opacity: 1;
+}
+
+hr.divider-light {
+  background-color: #fff;
+}
+
+.bg-custom-green{
+  background-color: #786F52;
+}
+
+
+
+/* BEGIN LANDING */
+#landing {
+  margin-top: 70px;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/BenOrrvick_Landing.jpg");
+  background-position:center 20% ;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.landing h1, header.landing .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  #landing {
+    height: 100%;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  #landing p {
+    font-size: 1.15rem;
+  }
+  #landing.landing h1, header.landing .h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.landing h1, header.landing .h1 {
+    font-size: 3.5rem;
+  }
+}
+/* END LANDING */
+
+/* BEGIN PROJECT SECTION */
+#project .container-fluid, #project .container-sm, #project .container-md, #project .container-lg, #project .container-xl, #project .container-xxl {
+  max-width: 1920px;
+}
+#project .container-fluid .project-box, #project .container-sm .project-box, #project .container-md .project-box, #project .container-lg .project-box, #project .container-xl .project-box, #project .container-xxl .project-box {
+  position: relative;
+  display: block;
+}
+#project .container-fluid .project-box .project-box-caption, #project .container-sm .project-box .project-box-caption, #project .container-md .project-box .project-box-caption, #project .container-lg .project-box .project-box-caption, #project .container-xl .project-box .project-box-caption, #project .container-xxl .project-box .project-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #FEB95F;
+  background: rgb(120, 111, 82, .9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#project .container-fluid .project-box .project-box-caption .project-category, #project .container-sm .project-box .project-box-caption .project-category, #project .container-md .project-box .project-box-caption .project-category, #project .container-lg .project-box .project-box-caption .project-category, #project .container-xl .project-box .project-box-caption .project-category, #project .container-xxl .project-box .project-box-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#project .container-fluid .project-box .project-box-caption .project-name, #project .container-sm .project-box .project-box-caption .project-name, #project .container-md .project-box .project-box-caption .project-name, #project .container-lg .project-box .project-box-caption .project-name, #project .container-xl .project-box .project-box-caption .project-name, #project .container-xxl .project-box .project-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#project .container-fluid .project-box:hover .project-box-caption, #project .container-sm .project-box:hover .project-box-caption, #project .container-md .project-box:hover .project-box-caption, #project .container-lg .project-box:hover .project-box-caption, #project .container-xl .project-box:hover .project-box-caption, #project .container-xxl .project-box:hover .project-box-caption {
+  opacity: 1;
+}
+/* END PROJECT SECTION */
+
+/* CONTACT SECTION */
+.formControl label{
+  color:#FEB95F;
+  font-family: 'Oswald', sans-serif;
+}
+
+.formControl label i{
+  display:none;
+  padding: 5px;
+  visibility: hidden;
+}
+
+.formControl small{
+  font-family: Raleway, sans-serif;
+  display: block;
+  text-align: center;
+  visibility: hidden;
+  padding-bottom: 5px;
+}
+.formControl.error small{
+  visibility: visible !important;
+  color: #e74c3c !important;
+}
+
+.formControl.success input {
+  border: 2px solid #2ecc71 ;
+}
+
+.formControl.success label i.fa-check-circle{
+  display:block;
+  visibility: visible;
+  color: #2ecc71 ;
+}
+
+.formControl.error input {
+  border: 2px solid #e74c3c !important;
+}
+.formControl.error label i.fa-exclamation-circle{
+  display:block;
+  visibility: visible;
+  color: #e74c3c ;
+}
+
+/* END CONTACT SECTION */

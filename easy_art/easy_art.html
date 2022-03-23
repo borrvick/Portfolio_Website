@@ -1,0 +1,59 @@
+<!-- 
+    Author: Ben Orrvick
+    Class: CIS 270
+    Purpose: This project will allow the user to input numbers in various text boxes while
+    also clicking buttons to generate shapes. The user can also draw on the canvas with their mouse, or w, a, s, d
+    Date: April 20th, 2018
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="canvas.css">
+    <script src="canvas.js"></script>
+    <title>Canvas</title>
+</head>
+
+<body>
+    <!-- first div is for the header -->
+    <div class="head">
+        <h1>EASY ART</h1>
+        <p>DESIGNED FOR DESKTOP USE. MOBILE NOT SUPPORTED. </p>
+        <p>Mouse Draw: hold down left mouse key and move. - Etch-a-Scetch: Use W-A-S-D (up, down, left, right).</p>
+    </div>
+
+    <!-- outter div is to hold canvas div and options div -->
+    <div class="flex-container">
+        <div class="canvas">
+            <!-- size is not responsive to mobile -->
+            <canvas id="myCanvas" width="800" height="400" style="border:2px black solid;"></canvas>
+        </div>
+        <div class="tools">
+            <button id="box" type="button">Boxes</button>
+            <br>
+
+            <button id="circle" type="button">Circles</button>
+            <br>
+
+            <label>Repeat</label>
+            <input id="repeat" type="text" value="20">
+            <hr>
+            <label>Key Size!</label>
+            <input type="text" id="keyWidth" name="tes" value="20">
+            <hr>
+            <label>Mouse Size!</label>
+            <input type="text" id="mouseWidth" value="20">
+            <hr>
+            <button id="clear" type="button">Clear</button>
+            <br>
+            <input type="radio" id="white" name="color" value="white" checked> White
+            <br>
+            <input type="radio" id="grey" name="color" value="grey"> Grey
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

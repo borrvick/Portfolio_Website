@@ -1,0 +1,90 @@
+/*
+    Author: Ben Orrvick
+    Class: CIS 270
+    Purpose: This project will allow the user to input numbers in various text boxes while
+    also clicking buttons to generate shapes. The user can also draw on the canvas with their mouse, or w, a, s, d
+    Date: April 20th, 2018
+
+    */
+
+/* Google font imports */
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.canvas{
+    padding: 8px;
+    margin: 8px;
+    box-shadow: 3px 3px 4px #000000;
+}
+body{
+    background-image: linear-gradient(to right, red , yellow);
+}
+/* these are the buttons to use the canvas */
+.tools{
+
+
+    padding: 8px;
+    margin: 8px auto;
+    background-color: transparent;
+    box-shadow: 3px 3px 4px #000000;
+
+}
+
+/* this is for the div holind everything such as canvas and settings div */
+.flex-container {
+    padding: 5px;
+    width: 70%;
+    display: flex;
+    margin: 5px auto;
+    background-color: transparent;
+}
+/* this is for the main heading that says canvas and java script */
+.head {
+    display: block;
+    padding: 5px;
+    width: 70%;
+    display: block;
+    margin: 5px auto;
+    color: white;
+    text-shadow: 3px 3px 4px #000000;
+    background-color: transparent;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+}
+
+/* css for text boxs controls the size and centers them */
+input[type="text"] {
+    font-family: 'Amatic SC', cursive;
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+}
+/* css for buttons to center them */
+button {
+    font-family: 'Amatic SC', cursive;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    width: 50px;
+}
+
+/* centers the labels in the div */
+label {
+    font-family: 'Rampart One', cursive;
+    display: block;
+    text-align: center;
+}
+
+input[type="radio"] {
+    font-family: 'Amatic SC', cursive;
+}
